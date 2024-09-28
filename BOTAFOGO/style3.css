@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.6; /* distancia entre as linhas */
+    box-sizing: border-box;/* O box-sizing: border-box garante que o padding seja incluido no calculo da lagura, evitando que o conteudo ultrapasse a tela. */
+    
+}
+html{/* aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa pagina */
+    width: 100%;
+    height: 100vh;
+}
+header{
+    padding: min(5vh, 4rem);/* ajustando o padding para ser mais flexivel */
+    width: 100%;/* colocamos a largura para 100% do espaço disponivel */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;/* alinhamento horizontal */
+    color: white;
+    text-align: center;
+    align-items: center;/* alinhamento vertical */
+    /* posicionamento do header */
+    position: sticky;/* posicionamento do header usando sticky, sendo um posicionamento fixo, porem distinto do Fixed */
+    top: 0;/* esapaçamento superior zerado, fazendo com que o header fique grudado ao topo */
+    left: 0;/* esapaçamento superior zerado, fazendo com que o header fique grudado á esquerda */
+    z-index: 999;/* eixo de profundidade (eixo cartesiano) */
+    box-shadow: 0 0.51rem 0.7rem white;/* primeiro valor sombra na direito (0)
+    segundo valor sombra bottom (0.51)
+    terceiro valor gradiant da sombra (0.7) */
+    
+    
+}
+header i {
+    font-size: 4em;
+}
+header img{
+    border-radius: 100px;
+    width: 10vw;
+    height: 25vh;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+}
+header div button{
+    padding: 1.3rem;
+    width: 13rem;
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+header div button:hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+    box-shadow: 5px 4px 15px white;
+
+}
+.sessao1{
+    padding: min(20vh, 40rem);
+    width: 100%;
+    background-image: url(BOTAFOGO/kkakakakakakaka.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.sessao1 .div1{
+    color: white;
+    margin: 0 auto;
+    text-shadow: 10px 10px 20px white;
+}
+.sessao1 .div2 img{
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;
+    border-radius: 20px;
+}
+.sessao1 .div1 span{
+    color: black;
+}
+.sessao2{
+    padding: min(20vh, 30rem);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    background-color: rgb(55, 55, 55);
+}
+.sessao2 img{
+    width: 20vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+}
+.sessao2 h2{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+.sessao2 img:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.8s;
+}
+footer{
+    background-color: rgb(74, 73, 73);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: min(10vh, 4rem);
+    font-size: 40px;
+}
+footer i{
+    color: white;
+}
+footer img{
+    width: 4rem;
+}
+.fa-youtube:hover{
+    color: red;
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+.fa-facebook:hover{
+    color: rgb(0, 106, 255);
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+
+@media (max-width:873px){
+    header i{
+        font-size: 3rem;
+    }
+    header button{
+        width: 10rem;
+        height: 0.8rem;
+    }
+    .sessao1{
+        padding: 9rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .div2 img{
+        width: 3rem;
+        margin: 0 auto;
+    }
+    .sessao1 p{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        margin: 2rem;
+    }
+    .sessao2{
+        padding: 9rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .div2 img{
+        width: 16rem;
+        margin: 0 auto;
+    }
+    .div1 p{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        margin: 2rem;
+    }
+    
+}
