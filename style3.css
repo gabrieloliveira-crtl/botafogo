@@ -3,7 +3,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    line-height: 1.6; /* distancia entre as linhas */
     box-sizing: border-box;/* O box-sizing: border-box garante que o padding seja incluido no calculo da lagura, evitando que o conteudo ultrapasse a tela. */
     
 }
@@ -132,13 +131,14 @@ header div button:hover{
     flex-wrap: wrap;
     /* posicionamento relativo */
     position: relative;
+    text-align: center;
 }
 /* aqui estamos estilizando nossa caixa onde dentro estao os conteudos */
 .filhos{
     /* largura da caixa */
     width: 200px;
     /* altura da caixa */
-    height: 430px;
+    height: 400px;
     /* espaçamento geral */
     margin: 30px;
     /* sombra da caixa e cor */
