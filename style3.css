@@ -118,63 +118,108 @@ header div button:hover{
     align-items: center;
     gap: 20px;
 }
+/* elemento pai das caixas (3 div's) */
 .pai{
+    /* tornando ele flexivel */
     display: flex;
+    /* justificando os itens na horizontal */
     justify-content: center;
+    /* alinhando os itens */
     align-items: center;
-    text-align: center;
+    /* prioridade no eixo Z */
     z-index: 1;
+    /* habilitando a quebra de linha das caixas caso necessario */
     flex-wrap: wrap;
+    /* posicionamento relativo */
     position: relative;
 }
+/* aqui estamos estilizando nossa caixa onde dentro estao os conteudos */
 .filhos{
+    /* largura da caixa */
     width: 200px;
+    /* altura da caixa */
     height: 430px;
+    /* espaçamento geral */
     margin: 30px;
+    /* sombra da caixa e cor */
     box-shadow: 20px 20px 50px;
+    /* arredondamento da borda */
     border-radius: 14px;
+    /* cor de fundo do elemento */
     background: rgba(128, 128, 128, 0.288);
     
 }
+/* caixa de conteudo */
 .conteudo{
+    /* preenchimento interno do conteudo */
     padding: 20px;
+    /* alinhando o conteudo ao centro */
     text-align: center;
+    /* estabelecendo um raio de 30px de espaço no eixo Y */
     transform: translateY(30px);
+    /* 20% da opacidade */
     opacity: 0.2;
+    /* aplicando uma transição no evento */
     transition: 0.5s;
 }
 .conteudo:hover{
+    /* 100% de visibilidade */
     opacity: 1;
+    /* aplicando o retorno do conteudo ao eixoY em 0° */
     transform: translateY(0px);
-    transition: 0.5s;
 }
+/* subtitulo da caixa */
 .conteudo h2{
+    /* posicionamento absoluto em relaçao ao PAI */
     position: absolute;
+    /* jogando ele 30px a direita */
     right: 30px;
+    /* tamanho da letra */
     font-size: 5rem;
+    /* cor da letra - deixa no transparente */
     color: rgba(128, 128, 128, 0.379);
 }
+/* subtitulo da caixa */
 .conteudo h3{
+    /* tamanho da fonte */
     font-size: 1.8em;
+    /* cor da letra */
     color: white;
+    /* profundidade no eixo Z */
     z-index: 1;
 }
+/* paragrafo da caixa */
 .conteudo p{
+    /* tamanho da letra */
     font-size: 0.8em;
+    /* cor da letra */
     color: white;
+    /* peso da fonte */
     font-weight: 300;
+    /* espaçamento superior */
     margin-top: 4rem;
 }
+/* botao ancora da caixa */
 .conteudo a{
+    /* preenchimento eixo X e Y */
     padding: 8px 20px;
+    /* cor de fundo */
     background: white;
+    /* cor da letra */
     color: black;
+    /* removendo o sublinhado */
     text-decoration: none;
+    /* arredondamento da borda */
     border-radius: 15px;
+    /* peso da fonte */
     font-weight: 500;
+    /* espaçamento superior */
     margin-top: 2.7rem;
+    /* sombra da caixa */
     box-shadow: 0 5px 15px black;
+    /* comportamento do botão em linha sempre em bloco */
     display: inline-block;
+    /* posicionamento relativo */
     position: relative;
 }
 footer{
